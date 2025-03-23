@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Open External Browser</title>
+  <title>Open External Browser Test</title>
   <script src="https://static.line-scdn.net/liff/edge/2.1/liff.js"></script>
 </head>
 <body>
@@ -17,12 +17,12 @@
       }
       // 3. 外部ブラウザを開く
       liff.openWindow({
-        url: '>https://ig.me/m/spjshunsuke4?ref=32:t_igme_ref_params', // デフォルトブラウザで開きたいURL
-        external: true                      // これがポイント
+        url: 'https://ig.me/m/spjshunsuke4?ref=32:t_igme_ref_params', // テスト用URL
+        external: true                       // 外部ブラウザで開く
       });
       
-      // 4. このページ自体は不要であれば閉じる（任意）
-      // liff.closeWindow(); // 必要があれば
+      // 4. このLIFF画面を閉じる（必要があれば）
+      // liff.closeWindow(); 
     })
     .catch(err => {
       console.error('LIFF init failed ', err);
